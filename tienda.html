@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karu Pet Rescue | Tienda con Causa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Karu Pet Rescue</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopta.html">Adopta</a></li>
+                <li><a href="ayudar.html">Cómo Ayudar</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="ayudar.html" class="btn-donate-nav">Dona</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="store-banner">
+            <h2>🛒 Tienda Oficial KARU: Compra con Causa</h2>
+            <p style="margin-top: 10px; opacity: 0.9;">¡Adquiere nuestra nueva mercancía! El 100% de las ganancias se destina directamente a cubrir deudas veterinarias, cirugías, tratamientos médicos y alimento para los rescatados.</p>
+        </div>
+
+        <h3 style="color: var(--coral-bg); margin-bottom: 25px; font-size: 24px;">Lote de Mercancía Disponible</h3>
+        
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <div class="product-img">[ Imagen: Playera Oficial KARU Blanca ]</div>
+                <div class="product-body">
+                    <h4 class="product-title">Playera "No podemos cambiar el mundo..."</h4>
+                    <p style="font-size: 13px; color: #666; margin-bottom: 15px; flex-grow: 1;">Playera 100% algodón con el eslogan oficial de la asociación. Disponible en tallas S, M, L y XL.</p>
+                    <div class="product-price">$250 MXN</div>
+                    <a href="#" class="btn-adopt-me" style="font-size: 14px;">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">[ Imagen: Playera KARU Negra ]</div>
+                <div class="product-body">
+                    <h4 class="product-title">Playera Ilustrada "Karu Pet Rescue"</h4>
+                    <p style="font-size: 13px; color: #666; margin-bottom: 15px; flex-grow: 1;">Diseño especial ilustrado por nuestra diseñadora interna, mostrando la unión y rescate animal en la región.</p>
+                    <div class="product-price">$280 MXN</div>
+                    <a href="#" class="btn-adopt-me" style="font-size: 14px;">Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">[ Imagen: Tote Bag KARU ]</div>
+                <div class="product-body">
+                    <h4 class="product-title">Bolsa Ecológica (Tote Bag) - Edición Huellitas</h4>
+                    <p style="font-size: 13px; color: #666; margin-bottom: 15px; flex-grow: 1;">Bolsa de manta resistente, ideal para tus compras diarias mientras promueves el respeto a los derechos animales.</p>
+                    <div class="product-price">$120 MXN</div>
+                    <a href="#" class="btn-adopt-me" style="font-size: 14px;">Agregar al Carrito</a>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="admin-management-box">
+            <h3 style="color: var(--dark-text); margin-bottom: 5px;">📊 Módulo Administrativo: Control de Gastos e Ingresos</h3>
+            <p style="font-size: 13px; color: #64748b;">[Vista del Refugio] Sistema de gestión integrado para registrar, administrar y transparentar los recursos.</p>
+            
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>ID Transacción</th>
+                        <th>Concepto / Descripción</th>
+                        <th>Categoría</th>
+                        <th>Tipo</th>
+                        <th>Monto (MXN)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25/05/2026</td>
+                        <td>#TX-0981</td>
+                        <td>Venta de 3 Playeras Oficiales (Tienda Web)</td>
+                        <td>Venta Mercancía</td>
+                        <td><span class="badge-income">Ingreso</span></td>
+                        <td>+$780.00</td>
+                    </tr>
+                    <tr>
+                        <td>24/05/2026</td>
+                        <td>#TX-0980</td>
+                        <td>Donación mensual fija - Padrino ID #042</td>
+                        <td>Padrinos</td>
+                        <td><span class="badge-income">Ingreso</span></td>
+                        <td>+$350.00</td>
+                    </tr>
+                    <tr>
+                        <td>22/05/2026</td>
+                        <td>#TX-0979</td>
+                        <td>Pago Veterinario: Cirugía Perrito Firulais (ID #042)</td>
+                        <td>Gastos Médicos</td>
+                        <td><span class="badge-expense">Egreso</span></td>
+                        <td>-$2,400.00</td>
+                    </tr>
+                    <tr>
+                        <td>20/05/2026</td>
+                        <td>#TX-0978</td>
+                        <td>Compra de 4 bultos de croquetas cachorro (20kg)</td>
+                        <td>Alimento</td>
+                        <td><span class="badge-expense">Egreso</span></td>
+                        <td>-$1,850.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="margin-top: 20px; font-weight: bold; text-align: right; color: var(--dark-text);">
+                Balance Actual del Refugio: <span style="color: #991b1b; font-size: 18px;">-$3,120.00 MXN</span>
+            </div>
+        </section>
+
+        <section style="margin-top: 40px; background-color: #fffbeb; border: 1px solid #fef3c7; padding: 25px; border-radius: 12px;">
+            <h4 style="color: #b45309; margin-bottom: 8px;">📌 Recomendación Operativa para KARU</h4>
+            <p style="font-size: 14px; color: #78350f; line-height: 1.5;">
+                Dado que los egresos médicos superan actualmente a los ingresos, sugerimos automatizar las alertas visuales de este balance. De este modo, cuando el balance sea negativo, la página de inicio puede activar automáticamente un banner de urgencia de donaciones en la parte superior.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Asociación KARU (Keeping Animal Rights). Tijuana - Tecate - Rosarito. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

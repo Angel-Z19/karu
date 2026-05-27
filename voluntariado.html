@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karu Pet Rescue | Voluntariado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Karu Pet Rescue</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopta.html">Adopta</a></li>
+                <li><a href="ayudar.html">Cómo Ayudar</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="ayudar.html" class="btn-donate-nav">Dona</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Únete al Equipo KARU</h2>
+        <p style="text-align: center; max-width: 700px; margin: -20px auto 40px; color: #666;">
+            El recurso más valioso de nuestro refugio es el tiempo de las personas. Actualmente somos menos manos en la organización y te necesitamos para seguir rescatando en Tijuana, Tecate y Rosarito.
+        </p>
+
+        <div class="roles-grid">
+            <div class="role-card">
+                <h3>🐾 Hogar Temporal</h3>
+                <p style="font-size: 14px; color: #666;">Uno de nuestros pilares. Recibe a un perrito en tu casa temporalmente mientras le encontramos una familia definitiva. Nosotros te apoyamos en la medida de lo posible con sus gastos.</p>
+            </div>
+            <div class="role-card" style="border-top-color: var(--coral-bg);">
+                <h3>📢 Comunicación y Redes</h3>
+                <p style="font-size: 14px; color: #666;">Ayúdanos a diseñar las fichas de adopción, responder mensajes en Facebook/Instagram o editar videos emotivos de los antes y después para concientizar a la comunidad.</p>
+            </div>
+            <div class="role-card">
+                <h3>🚗 Logística y Traslados</h3>
+                <p style="font-size: 14px; color: #666;">¿Tienes auto y disponibilidad? Apóyanos trasladando perritos a sus citas con el veterinario, yendo a recoger donaciones en especie o visitando las cafeterías aliadas.</p>
+            </div>
+        </div>
+
+        <div class="form-selector-tabs">
+            <button class="tab-btn active">Formulario de Voluntariado / Hogar Temporal</button>
+        </div>
+
+        <section class="form-section" id="form-voluntario">
+            <h3 style="color: var(--coral-bg); margin-bottom: 20px; font-size: 22px;">Registro de Voluntariado</h3>
+            
+            <form action="#" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="vol-nombre">Nombre Completo *</label>
+                        <input type="text" id="vol-nombre" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-grid" style="margin-bottom: 0; padding: 0;">
+                        <div class="form-group">
+                            <label for="vol-edad">Edad *</label>
+                            <input type="number" id="vol-edad" required placeholder="Ej: 22">
+                        </div>
+                        <div class="form-group">
+                            <label for="vol-ciudad">Ciudad de Residencia *</label>
+                            <select id="vol-ciudad" required>
+                                <option value="tijuana">Tijuana</option>
+                                <option value="tecate">Tecate</option>
+                                <option value="rosarito">Rosarito</option>
+                                <option value="otra">Otra</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="vol-telefono" required placeholder="Ej: 664 123 4567">
+                    </div>
+                </div>
+
+                <div class="form-grid" style="grid-template-columns: 1fr 1fr; margin-top: 15px;">
+                    <div class="form-group">
+                        <label for="vol-interes">¿En qué área te gustaría apoyar principalmente? *</label>
+                        <select id="vol-interes" required>
+                            <option value="temporal">Quiero ser Hogar Temporal</option>
+                            <option value="eventos">Apoyo en eventos y rescates</option>
+                            <option value="redes">Redes sociales y contenido</option>
+                            <option value="traslados">Traslado de perritos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-tiempo">Disponibilidad de tiempo *</label>
+                        <input type="text" id="vol-tiempo" required placeholder="Ej: Fines de semana, 4 horas al día">
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="vol-experiencia">¿Tienes experiencia previa con animales o alguna observación que debamos saber?</label>
+                    <textarea id="vol-experiencia" placeholder="Cuéntanos un poco sobre ti y tus mascotas actuales..."></textarea>
+                </div>
+
+                <div class="tracking-info-box">
+                    <span>🔔</span>
+                    <p><strong>Sistema de Seguimiento Automatizado:</strong> Al enviar tu solicitud, el equipo de administración recibirá una alerta y te contactará en un lapso de 48 horas laborales vía WhatsApp para validar tus datos.</p>
+                </div>
+
+                <div style="text-align: right; margin-top: 25px;">
+                    <button type="submit" class="btn-submit-form">Enviar Solicitud de Voluntariado</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="form-selector-tabs" style="margin-top: 50px; margin-bottom: 30px;">
+            <button class="tab-btn active" style="background-color: var(--blue-btn); color: var(--white);">Formulario de Colaboración Especial</button>
+        </div>
+
+        <section class="form-section" id="form-colaboracion" style="border-left: 6px solid var(--blue-btn);">
+            <h3 style="color: var(--blue-btn); margin-bottom: 20px; font-size: 22px;">Colaboración Profesional o Empresarial</h3>
+            <p style="font-size: 14px; color: #666; margin-bottom: 25px;">¿Eres profesionista, tienes una empresa o estudias una carrera y quieres aportar tus conocimientos especializados en administración, leyes o marketing?</p>
+            
+            <form action="#" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="col-nombre">Nombre o Razón Social *</label>
+                        <input type="text" id="col-nombre" required placeholder="Tu nombre o el de tu negocio">
+                    </div>
+                    <div class="form-group">
+                        <label for="col-perfil">Profesión / Especialidad *</label>
+                        <input type="text" id="col-perfil" required placeholder="Ej: Administrador, Diseñadora, Veterinario">
+                    </div>
+                    <div class="form-group">
+                        <label for="col-contacto">Medio de Contacto Preferido *</label>
+                        <input type="text" id="col-contacto" required placeholder="Correo o Teléfono">
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="col-propuesta">¿Cómo te gustaría colaborar con la Asociación KARU? *</label>
+                    <textarea id="col-propuesta" required placeholder="Ej: Ofrezco asesoría administrativa, talleres de concientización, donación de servicios médicos, etc..."></textarea>
+                </div>
+
+                <div style="text-align: right; margin-top: 25px;">
+                    <button type="submit" class="btn-submit-form" style="background-color: var(--blue-btn);">Ofrecer Colaboración Especial</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Asociación KARU (Keeping Animal Rights). Tijuana - Tecate - Rosarito. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

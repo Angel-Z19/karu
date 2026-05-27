@@ -1,0 +1,710 @@
+/* PALETA DE COLORES OFICIAL KARU */
+:root {
+    --coral-bg: #ff6f69; /* Fondo coral de la imagen */
+    --blue-btn: #5c6bc0; /* Azul purpúreo de los botones */
+    --blue-hover: #4a59a8;
+    --white: #ffffff;
+    --dark-text: #333333;
+    --light-gray: #f9f9f9;
+}
+
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* CABECERA / MENÚ */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--coral-bg);
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--coral-bg);
+}
+
+.btn-donate-nav {
+    background-color: var(--blue-btn);
+    color: var(--white) !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background 0.3s !important;
+}
+
+.btn-donate-nav:hover {
+    background-color: var(--blue-hover);
+}
+
+/* SECCIÓN HERO (BIENVENIDA) */
+.hero {
+    background-color: var(--coral-bg);
+    color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+/* BOTONES ESTILO IMAGE KARU */
+.karu-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.karu-btn {
+    background-color: var(--blue-btn);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.karu-btn:hover {
+    background-color: var(--blue-hover);
+    transform: translateY(-2px);
+}
+
+/* CONTENEDOR DE SECCIONES */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark-text);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--coral-bg);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* SECCIÓN CONCIENTIZACIÓN (ANTES Y DESPUÉS) */
+.grid-cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.case-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.case-img-placeholder {
+    background-color: #ddd;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: bold;
+}
+
+.case-body {
+    padding: 20px;
+}
+
+.case-body h3 {
+    margin-bottom: 10px;
+    color: var(--coral-bg);
+}
+
+/* PIE DE PÁGINA (FOOTER) */
+footer {
+    background-color: #222;
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* --- ESTILOS NUEVOS PARA LA SECCIÓN ADOPTA --- */
+
+/* Filtros de búsqueda */
+.filter-container {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-container select, .filter-container input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Catálogo de Mascotas */
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.pet-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.pet-img {
+    background-color: #e2e8f0;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+    font-weight: bold;
+    position: relative;
+}
+
+.pet-badge-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--coral-bg);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pet-info {
+    padding: 25px;
+}
+
+.pet-info h3 {
+    font-size: 24px;
+    color: var(--dark-text);
+    margin-bottom: 5px;
+}
+
+.pet-id {
+    font-size: 12px;
+    color: #a0aec0;
+    margin-bottom: 15px;
+}
+
+.pet-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tag-spec {
+    background: #edf2f7;
+    color: #4a5568;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pet-details-list {
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pet-details-list li {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #edf2f7;
+    padding-bottom: 4px;
+}
+
+.pet-details-list span {
+    font-weight: 600;
+}
+
+.pet-hobbies {
+    background: #fff5f5;
+    border-left: 4px solid var(--coral-bg);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.btn-adopt-me {
+    display: block;
+    text-align: center;
+    background-color: var(--blue-btn);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-adopt-me:hover {
+    background-color: var(--blue-hover);
+}
+
+/* Sección de Formulario Externo */
+.form-section {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.btn-submit-form {
+    background-color: var(--coral-bg);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn-submit-form:hover {
+    opacity: 0.9;
+}
+
+
+/* --- ESTILOS NUEVOS PARA LA SECCIÓN CÓMO AYUDAR --- */
+
+/* Contenedor de métodos de pago en cuadrícula */
+.donation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.donation-card {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    transition: transform 0.3s;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+}
+
+.donation-icon-placeholder {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: var(--blue-btn);
+    font-weight: bold;
+}
+
+.donation-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--dark-text);
+}
+
+.donation-card p {
+    font-size: 14px;
+    color: #666;
+    word-break: break-all; /* Para que las cuentas largas no rompan el diseño */
+}
+
+/* Sección dividida en dos columnas (Cafeterías y QR / Lista de Donantes) */
+.support-two-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .support-two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-block-box {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Estilos para las Cafeterías y Alcancías */
+.cafe-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.cafe-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #edf2f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cafe-list li:last-child {
+    border-bottom: none;
+}
+
+.cafe-city {
+    background: #eef2ff;
+    color: var(--blue-btn);
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Contenedor del Código QR promocional */
+.qr-sidebar-box {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-graphic-placeholder {
+    width: 160px;
+    height: 160px;
+    background: #333;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Muro de Donadores */
+.donors-wall {
+    background: #fff5f5;
+    border: 1px solid #ffe3e3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.donors-tags-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.donor-badge {
+    background: var(--white);
+    border: 1px solid var(--coral-bg);
+    color: var(--dark-text);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* --- ESTILOS NUEVOS PARA LA SECCIÓN VOLUNTARIADO --- */
+
+/* Contenedor de roles de ayuda */
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.role-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    border-top: 5px solid var(--blue-btn);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.role-card h3 {
+    color: var(--blue-btn);
+    margin-bottom: 10px;
+}
+
+.role-card ul {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Pestañas o Tabs simuladas para alternar formularios */
+.form-selector-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    background: #edf2f7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4a5568;
+    transition: all 0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background: var(--coral-bg);
+    color: var(--white);
+}
+
+/* Bloque para seguimiento de colaboradores */
+.tracking-info-box {
+    background: #eef2ff;
+    border: 1px solid #e0e7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #3730a3;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* --- ESTILOS NUEVOS PARA LA SECCIÓN TIENDA CON CAUSA --- */
+
+/* Banner de la tienda */
+.store-banner {
+    background-color: var(--blue-btn);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Cuadrícula de productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img {
+    background-color: #f1f5f9;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-weight: bold;
+}
+
+.product-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--dark-text);
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--coral-bg);
+    margin-bottom: 15px;
+}
+
+/* Panel de Administración / Simulación de Base de Datos de Gastos */
+.admin-management-box {
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 60px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: var(--white);
+    font-size: 14px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #e2e8f0;
+    color: var(--dark-text);
+}
+
+.badge-income {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.badge-expense {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}

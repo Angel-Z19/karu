@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karu Pet Rescue | Adopta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Karu Pet Rescue</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adopta.html">Adopta</a></li>
+                <li><a href="ayudar.html">Cómo Ayudar</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="ayudar.html" class="btn-donate-nav">Dona</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Nuestros Perritos en Adopción</h2>
+        
+        <div class="filter-container">
+            <input type="text" placeholder="Buscar por nombre...">
+            <select>
+                <option value="">Tamaño (Todos)</option>
+                <option value="chico">Chico</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+            <select>
+                <option value="">Edad (Todas)</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="joven">Joven</option>
+                <option value="adulto">Adulto</option>
+            </select>
+        </div>
+
+        <div class="pets-grid">
+            
+            <div class="pet-card">
+                <div class="pet-img">
+                    [Foto de Firulais]
+                    <span class="pet-badge-status">Listo para adoptar</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Firulais</h3>
+                    <div class="pet-id">ID: #042 | Caso: Rescate Tecate</div>
+                    
+                    <div class="pet-tags">
+                        <span class="tag-spec">Macho</span>
+                        <span class="tag-spec">Mediano (15 kg)</span>
+                        <span class="tag-spec">2 años</span>
+                    </div>
+
+                    <ul class="pet-details-list">
+                        <li>Esterilizado: <span>Sí</span></li>
+                        <li>Vacunas: <span>Al día (Séxtuple, Rabia)</span></li>
+                        <li>Estado de Salud: <span>Excelente</span></li>
+                        <li>Observaciones: <span>Muy sociable con niños, recuperado de desnutrición.</span></li>
+                    </ul>
+
+                    <div class="pet-hobbies">
+                        <strong>Curiosidades y Hobbies:</strong> Le encanta perseguir pelotas de tenis y se duerme bocarriba cuando está muy feliz.
+                    </div>
+
+                    <a href="#" class="btn-adopt-me">Iniciar Proceso de Adopción</a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <div class="pet-img">
+                    [Foto de Luna]
+                    <span class="pet-badge-status">Listo para adoptar</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Luna</h3>
+                    <div class="pet-id">ID: #043 | Caso: Reporte Rosarito</div>
+                    
+                    <div class="pet-tags">
+                        <span class="tag-spec">Hembra</span>
+                        <span class="tag-spec">Chico (8 kg)</span>
+                        <span class="tag-spec">5 meses</span>
+                    </div>
+
+                    <ul class="pet-details-list">
+                        <li>Esterilizado: <span>Sí</span></li>
+                        <li>Vacunas: <span>En proceso (Falta refuerzo)</span></li>
+                        <li>Estado de Salud: <span>Estable</span></li>
+                        <li>Observaciones: <span>Un poco tímida al principio pero muy cariñosa.</span></li>
+                    </ul>
+
+                    <div class="pet-hobbies">
+                        <strong>Curiosidades y Hobbies:</strong> Su pasatiempo favorito es esconder los juguetes debajo de las cobijas y ama las galletas de avena.
+                    </div>
+
+                    <a href="#" class="btn-adopt-me">Iniciar Proceso de Adopción</a>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="form-section">
+            <h2 class="section-title" style="font-size: 26px; margin-bottom: 25px;">¿Quieres dar un perrito en adopción?</h2>
+            <p style="margin-bottom: 30px; color: #555;">Por favor, llena este formulario con tus datos de contacto y la información del perrito para evaluar el caso.</p>
+            
+            <form action="#" method="POST">
+                <h3 style="color: var(--coral-bg); margin-bottom: 15px;">1. Datos Personales y de Contacto</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre-contacto">Nombre Completo *</label>
+                        <input type="text" id="nombre-contacto" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono-contacto">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono-contacto" required placeholder="Ej: 664 123 4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo-contacto">Correo Electrónico</label>
+                        <input type="email" id="correo-contacto" placeholder="tu@correo.com">
+                    </div>
+                </div>
+
+                <h3 style="color: var(--coral-bg); margin-top: 30px; margin-bottom: 15px;">2. Datos del Perrito</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre-perro">Nombre (o cómo le dices)</label>
+                        <input type="text" id="nombre-perro" placeholder="Ej: Sol">
+                    </div>
+                    <div class="form-group">
+                        <label for="edad-perro">Edad Aproximada</label>
+                        <input type="text" id="edad-perro" placeholder="Ej: 6 meses, 3 años">
+                    </div>
+                    <div class="form-group">
+                        <label for="tamano-perro">Tamaño</label>
+                        <select id="tamano-perro">
+                            <option value="chico">Chico</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-grid" style="grid-template-columns: 1fr;">
+                    <div class="form-group">
+                        <label for="cuidados-perro">¿Qué cuidados le puedes dar actualmente o qué situación presenta? *</label>
+                        <textarea id="cuidados-perro" required placeholder="Cuéntanos el motivo de la adopción y el estado actual del perrito..."></textarea>
+                    </div>
+                </div>
+
+                <div style="text-align: right; margin-top: 20px;">
+                    <button type="submit" class="btn-submit-form">Enviar Solicitud de Adopción</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Asociación KARU (Keeping Animal Rights). Tijuana - Tecate - Rosarito. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
